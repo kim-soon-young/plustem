@@ -35,7 +35,7 @@ ul {
 
 }
 .inner {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     background-color: pink;
 }
@@ -63,25 +63,63 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: top 0.5s ease-in-out; 
+  }
+  header > .inner {
+    padding: 0 20px 0 20px;
   }
 .header__top {
     width: 100%;
     height: 170px;
     background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .header__bottom {
-    width: 100%;
-    height: 90px;
-    background-color: violet;
-  }
+  /* 로고 */
   .header__top .logo{
     width: 200px;
     height: 60px;
     background-color: red;
-    display: inline-block;
-
+    display: block;
+  }
+  .header__bottom {
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    background-color: violet;
+  }
+  .header__top_right {
+ 
+  }
+  .header__myMenu {
+    display: flex;
+  }
+  .fa-solid {
+    padding-right: 0;
+    font-size: 20px;
+  }
+  .header__myMenu li {
+    padding-right: 34px;
+  }
+  .header__myMenu li.search {
+    padding-right: 0;
+  }
+  .header__myMenu li a{
+    font-size: 20px;
+  }
+  /* 네비 */
+  .main-menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: bold;
   }
 /* <!-- 메인 --> */
+main{
+  padding: 120px;
+}
 /* <!-- 섹션 베스트 --> */
 /* <!-- 섹션 세일 --> */
 /* <!-- 배너1 --> */
