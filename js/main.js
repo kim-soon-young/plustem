@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > headerTop.clientHeight) {
-      headerTop.style.display = "none";
+      headerTop.style.height = "0";
       headerBottom.style.position = "fixed";
       headerBottom.style.top = "0";
     } else {
-      headerTop.style.display = "block";
+      headerTop.style.height = "170px"; // 또는 다른 초기 높이 값으로 설정
       headerBottom.style.position = "static";
     }
   });
