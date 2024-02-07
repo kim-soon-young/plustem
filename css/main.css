@@ -123,9 +123,135 @@ main{
 /* <!-- 섹션 베스트 --> */
 /* <!-- 섹션 세일 --> */
 /* <!-- 배너1 --> */
-/* <!-- 섹션 간식 & 슬림쉐이크 --> */
-/* <!-- 배너2 --> */
-/* <!-- 섹션 리뷰 --> */
-/* <!-- 풋터 -->
-
+/* 색 3개 주석해제하기 */
+.banner1 .banner_inner a img{
+     
+    height: 270px;
+    width: auto;
+          margin: 0 auto;
+    display: block;
+    }
+    /* <!-- 배너2 --> */
+    .banner2 .banner_inner a img{
+        height: 270px;
+        width: auto;
+          margin: 0 auto;
+    display: block;
+    }
+    /* <!-- 섹션 간식 & 슬림쉐이크 --> */
+    
+    .snack_shake_inner{
+        width: 1300px;
+        margin: 0 auto;
+        /* background-color: rgb(235, 193, 200); */
+    }
+    .list_box{
+        display: flex;
+    justify-content: space-between;
+    
+    }
+    
+    .list_box li del, p{
+       /* color: blue;  */
+       letter-spacing: 0.3px;
+    }
+    
+    .list_box li a img{
+        display: block;
+        width: 300px;
+        height: 370px;
+    }
+    .list_box_text{
+        padding: 10px 0px 0px 10px;
+        width: 300px;
+        height: auto;
+        /* background-color: blueviolet; */
+    }
+    
+    .item_name{
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    .salePercent{
+        color: red;
+        display: inline;
+        float: left;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-right: 10px;
+    
+    }
+    .nomalPrice{
+        color: #a7a7a7;
+        float: left;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-right: 10px;
+    
+    }
+    .salePrice{
+        display: inline;
+        float: left;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.5em;
+    
+    }
+    .snack_shake{
+        margin-bottom: 200px;
+     
+    
+    }
+    /* <!-- 섹션 리뷰 --> */
+    .review_inner{
+        width: 1300px;
+        margin: 0 auto;
+        /* background-color:rgb(217, 238, 175); */
+        
+    }
+    .review_box{
+           display: flex;
+        justify-content: space-between;
+    }
+    
+    .review_box li a img{
+        display: block;
+        width: 320px;
+        height: 300px;
+    }
+    
+    .review_text{
+        width: 320px;
+        height: 200px;
+        background-color: rgb(193, 236, 238);
+    
+        letter-spacing: 0.3px;
+    line-height: 1.5em;
+    margin-bottom: 200px;
+    text-align: center;
+    /* overflow: auto; */
+    
+    }
+    
+    .review_name{
+        font-weight: bold;
+        font-size: 16px;
+        /* text-align: center;안먹어 */
+    
+    }
+     .review_content{
+        color: #a7a7a7;
+        font-size: 16px;
+        text-overflow: ellipsis;
+      width: 280px;  
+     }
+    
+    /* <!-- 풋터 -->*/
+    .ft_inner{
+        height: 400px;
+        background-color: blanchedalmond;
+    }
+    
+    
+    
 
