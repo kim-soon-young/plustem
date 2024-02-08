@@ -1,0 +1,97 @@
+/* 공통 */
+/* 헤더 */
+/* <!-- 메인 --> */
+/* <!-- 섹션 베스트 --> */
+/* <!-- 섹션 세일 --> */
+/* <!-- 배너1 --> */
+/* <!-- 섹션 간식 & 슬림쉐이크 --> */
+/* <!-- 배너2 --> */
+/* <!-- 섹션 리뷰 --> */
+/* <!-- 풋터 -->*/
+@media screen and (max-width:1300px){
+    /* 공통 */
+    .inner {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:1200px ) {
+    /* 헤더 */
+    .main-menu {
+        font-size: 20px;
+        gap: 50px;
+    }
+    .sub-menu {
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width:980px ) {
+        /* 베스트 */
+        .sale__item__left > .text h5 {
+            font-size: 25px;
+            padding: 10px 10px 10px 0;
+        }
+        .sale__item__left > .text p, .price p{
+            font-size: 15px;
+        }
+        .sale__item__left > .price {
+            align-items: center;
+        }
+        .sale__item__left > .price > strong {
+            font-size: 20px;
+            padding: 5px 5px 15px 0;
+    }  
+}
+@media screen and (max-width:980px ) {
+    .sale__item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-content: center;
+        gap: 50px;
+    } 
+}
+@media screen and (max-width: 768px) {
+    /* 헤더 */
+    .header__top {
+        display: none;
+    }
+    .main-menu {
+        display: none;
+    }
+    .logo-tablet {
+        display: block;
+        padding-left: 30px;
+    }
+    .fa-solid{
+        display: inline-block;
+        font-size: 30px;
+        color: black;
+        line-height: 90px;
+        position: absolute;
+        top: 0;
+        right: 80px;
+        cursor: pointer;
+      }
+      .fa-user {
+        right:130px;
+      }
+      .fa-cart-shopping {
+        right: 180px;
+      }
+     /* 모바일 메뉴 햄버거  */
+ .mbt {
+    display: block;
+ }
+    /* <!-- 메인 --> */
+main{
+    padding-top: 90px
+  }
+    
+}
+
+
+
+
+
