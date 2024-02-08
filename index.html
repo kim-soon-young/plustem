@@ -129,7 +129,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -137,6 +136,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
     <!-- Js 연동 -->
     <script src="js/html5shiv.js"></script>
@@ -178,33 +179,139 @@
           <nav>
             <ul class="main-menu">
               <li><a href="">전체보기</a></li>
-              <li><a href="">가벼운 한끼</a></li>
-              <li><a href="">가벼운 간식</a></li>
-              <li><a href="">가볍게 드링크</a></li>
+              <li>
+                <a href="">가벼운 한끼</a>
+                <ul class="sub-menu">
+                  <li><a href="">닭가슴살</a></li>
+                  <li><a href="">도시락</a></li>
+                  <li><a href="">주먹밥</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">가벼운 간식</a>
+                <ul class="sub-menu">
+                  <li><a href="">에너지바</a></li>
+                  <li><a href="">쿠키</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">가볍게 드링크</a>
+                <ul class="sub-menu">
+                  <li><a href="">에너지드링크</a></li>
+                  <li><a href="">프로틴드링크</a></li>
+                  <li><a href="">슬림세이크</a></li>
+                </ul>
+              </li>
               <li><a href="">1개 담기</a></li>
               <li><a href="">이벤트</a></li>
             </ul>
           </nav>
+
+          <!-- 태블릿 로고 -->
+          <a href="" class="logo-tablet"
+            ><img src="images/logo.png" alt="로고"
+          /></a>
+          <div class="navbt"></div>
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <!-- 햄버거 버튼 -->
+          <button class="mbt">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- 모바일 메뉴 리스트 -->
+          <div class="nav-mb">
+            <ul class="nav-mb-gnb">
+              <li><a href="#">전체보기</a></li>
+              <li><a href="#">가벼운 한끼</a></li>
+              <li><a href="#">가벼운 간식</a></li>
+              <li><a href="#">가볍게 드링크</a></li>
+              <li><a href="#">1개 담기</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </div>
         </div>
       </header>
-      <!-- 메인 -->
+      <!-- 메인-->
       <main>
-        <div class="inner"></div>
+        <!-- 스와이퍼 적용 -->
+        <div class="main-slide">
+          <div class="swiper sw-main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="images/maintest.jpg" alt="" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/maintest2.jpg" alt="" /></a>
+              </div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+
+            <div class="swiper-button-next sw-next"></div>
+            <div class="swiper-button-prev sw-prev"></div>
+          </div>
+        </div>
+        <script>
+          var swiper = new Swiper(".sw-main", {
+            slidesPerview: 1,
+            spaceBetween: 24,
+            speed: 1000,
+            loop: true,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next .sw-next",
+              prevEl: ".swiper-button-prev .sw-prev",
+            },
+          });
+        </script>
       </main>
       <!-- 섹션 베스트 -->
       <section class="best">
         <div class="inner">
           <h3>베스트</h3>
-          <h2>아무거나</h2>
+          <div class="btns">
+            <a href="#" class="btns-active">가벼운 한끼</a>
+            <a href="#">맛있는 간식</a>
+            <a href="#">드링크</a>
+          </div>
+          <div class="best__items">
+            <a href=""><div class="item1"></div></a>
+            <div class="item2"></div>
+            <div class="item3"></div>
+          </div>
         </div>
       </section>
       <!-- 섹션 초특가 행사 -->
       <section class="sale">
         <div class="inner">
           <h3>놓치면 후회하는 초특가 행사</h3>
+          <div class="sale__item">
+            <div class="sale__item__left">
+              <div class="text">
+                <p>고민은 배송만 늦출 뿐</p>
+                <h5>[특가] 한끼통살 프로식단러 할인+신제품 무료증정</h5>
+              </div>
+              <div class="price">
+                <p>13%</p>
+                <p>15,900원</p>
+                <strong>13,900원</strong>
+              </div>
+            </div>
+            <div class="sale__item__right">
+              <a href="">
+                <img src="images/04-sale/sale-img.gif" alt="할인이미지" />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- 배너1 -->
+
       <div class="banner","banner1">
         <div class="banner_inner">
           <a href="#"><img src="images/10-banner/banner01.png" alt=""></a>
@@ -279,16 +386,6 @@
           >
             </ul>
 
-      </div>
-    </section>
-
-    <!-- 배너2 -->
-    <div class="banner", "banner2">
-      <div class="banner_inner">
-        <a href="#"><img src="images/10-banner/banner02.png" alt=""></a>
-         
-      </div>
-    </div>
     <!-- 섹션 리뷰 -->
     <section class="review">
       <div class="review_inner">
@@ -363,4 +460,4 @@
     </footer>
   </div>
 </body>
-</html>
+
