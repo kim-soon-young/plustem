@@ -57,9 +57,17 @@ h4 {
 /* <!-- 섹션 베스트 --> */
 /* <!-- 섹션 세일 --> */
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* js기능추가  */
+.gotop.active {
+  bottom: 20px;
+  visibility: visible;
+  opacity: 1;
+}
+.gotop.active-footer {
+  bottom: 320px;
+}
 /* <!-- 배너1 --> */
-/* 색 3개 주석해제하기 */
+
 
 .banner {
   width: 100%;
@@ -70,17 +78,16 @@ h4 {
   display: block;
 }
 .mb_banner {
- width: 100%;
+  width: 100%;
   display: none;
 }
- 
+
 .mb_banner a img {
   width: 100%;
   display: block;
 }
 
 /* <!-- 섹션 간식 & 슬림쉐이크 --> */
-
 .snack_shake_inner {
   margin: 0 auto;
   /* background-color: rgb(235, 193, 200); */
@@ -97,6 +104,7 @@ h4 {
 }
 .list_box li a {
   width: 100%;
+  display: block;
 }
 .list_box li a img {
   width: 100%;
@@ -107,11 +115,8 @@ p {
   letter-spacing: 0.3px;
 }
 
-.list_box li a img {
-  display: block;
-}
 .list_box_text {
-  padding: 10px 0px 0px 10px;
+  padding: 20px 0px 0px 20px;
   /* background-color: blueviolet; */
 }
 
@@ -194,13 +199,13 @@ p {
 .review_name {
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
 }
 .review_content {
   color: #a7a7a7;
   font-size: 16px;
-
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -238,12 +243,13 @@ p {
   line-height: 60px;
   display: flex;
   justify-content: left;
-  gap: 90px;
+  gap: 5%;
   padding-left: 10%;
   background-color: #fff;
   border: 1px solid black;
   white-space: nowrap;
- /*  background-color: cadetblue; */
+  overflow-wrap: break-word;
+  /*  background-color: cadetblue; */
 }
 .ft_menu li a {
   /* overflow: hidden; */
@@ -276,6 +282,7 @@ p {
   padding-top: 30px;
   position: relative;
   /* margin-left: 15%; */
+  white-space: nowrap;
 }
 .ft_contents_right img {
   display: block;
