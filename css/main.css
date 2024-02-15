@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 @import url(font.css);
 * {
@@ -52,23 +53,8 @@ h4 {
   /* background-color: green; */
 }
 
-/* <!-- 헤더 --> */
-/* <!-- 메인 --> */
-/* <!-- 섹션 베스트 --> */
-/* <!-- 섹션 세일 --> */
 
-/* js기능추가  */
-.gotop.active {
-  bottom: 20px;
-  visibility: visible;
-  opacity: 1;
-}
-.gotop.active-footer {
-  bottom: 320px;
-}
 /* <!-- 배너1 --> */
-
-
 .banner {
   width: 100%;
   background-color: rgb(235, 145, 11);
