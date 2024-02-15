@@ -1,3 +1,4 @@
+// 스크롤 내리면 헤더 고정
 document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector("header");
   var headerTop = document.querySelector(".header__top");
@@ -9,19 +10,28 @@ document.addEventListener("DOMContentLoaded", function () {
       headerBottom.style.position = "fixed";
       headerBottom.style.top = "0";
     } else {
-      headerTop.style.height = "170px"; // 또는 다른 초기 높이 값으로 설정
+      headerTop.style.height = "170px";
       headerBottom.style.position = "static";
     }
   });
-});
-$(document).ready(function() {
-  $('.main-menu').mouseenter(function() {
-      $('.sub-menu li , .navbt').stop().slideDown();
+
+  // swiper
+  var swiper = new Swiper(".sw-main", {
+    slidesPerview: 1,
+    spaceBetween: 24,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
   });
-  $('.main-menu').mouseleave(function() {
-      $('.sub-menu li , .navbt').stop().slideUp();
-  });
 });
+
+// 햄버거 작동
 window.onload = function () {
   //상단 스크롤 기능
   const header = document.querySelector(".header");
@@ -41,7 +51,7 @@ window.onload = function () {
       mbt.classList.remove("active");
     }
   });
-// 반응형 (1024px) 햄버거바가 생겼을때
+  // 반응형 (1024px) 햄버거바가 생겼을때
   // 햄버거버튼을 클릭했을때
   const navMb = document.querySelector(".nav-mb");
   const htmlRoot = document.querySelector("html");
@@ -72,3 +82,13 @@ window.onload = function () {
     }
   });
 };
+
+// 제이쿼리
+$(document).ready(function () {
+  $(".main-menu").mouseenter(function () {
+    $(".sub-menu li , .navbt").stop().slideDown();
+  });
+  $(".main-menu").mouseleave(function () {
+    $(".sub-menu li , .navbt").stop().slideUp();
+  });
+});
