@@ -493,64 +493,10 @@
     margin-bottom: 100px;
   }
   /* =============================500px리뷰 */
-  .review_inner {
-    margin: 0 auto;
-    position: relative;
-    /* background-color:rgb(217, 238, 175); */
-  }
-  .review_box {
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-  }
-  .review_box_list {
-    width: calc(50% - 10px);
-    height: 450px;
-    margin-bottom: 10px;
-  }
-  .review_text {
-    /* width: 100%; */
-    height: 50px;
-    /* background-color: rgb(193, 236, 238); */
-    letter-spacing: 0.3px;
-    line-height: 1.5;
-    margin-bottom: 100px;
-    padding: 4px 0px 0px 4px;
-    position: relative;
-  }
-  .reviewStar {
-    height: 10px;
-    position: absolute;
-    bottom: -90px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .review_name {
-    font-weight: bold;
-    font-size: 12px;
-  }
-  .review_content {
-    color: #a7a7a7;
-    font-size: 10px;
-    position: absolute;
-    bottom: -45px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-align: center;
-    text-overflow: ellipsis;
-  }
-  .review_moreBt {
-    border: 1px solid #a7a7a7;
-    padding: 10px 20px;
-    font-size: 10px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -50px;
-    letter-spacing: 0.3px;
-    color: #a7a7a7;
-  }
+  
+  /* =============================500px푸터 */
+ 
+
   .ft_inner {
     height: 320px;
     font-size: 12px;
@@ -568,6 +514,9 @@
   }
   .ft_contents_left {
     display: none;
+  }
+  .ft_contents_right p {
+    font-size: 11px;
   }
   .cellNum {
     font-size: 20px;
@@ -612,4 +561,3 @@
     font-size: 10px;
   }
 }
-
