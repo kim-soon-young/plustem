@@ -114,12 +114,10 @@ p {
   /* color: blue;  */
   letter-spacing: 0.3px;
 }
-
 .list_box_text {
   padding: 20px 0px 0px 20px;
   /* background-color: blueviolet; */
 }
-
 .item_name {
   font-size: 18px;
   font-weight: bold;
@@ -164,7 +162,6 @@ p {
   margin-bottom: 200px;
   gap: 5px;
 }
-
 .review_box_list {
   width: calc(100% / 4);
   height: 520px;
@@ -173,12 +170,7 @@ p {
 .reiviewImg {
   width: 100%;
   height: 300px;
-  /* display: block;
-    width: 320px;
-    height: 300px;
-    position: relative; */
 }
-
 .review_text {
   height: 200px;
   /* background-color: rgb(193, 236, 238); */
@@ -195,7 +187,6 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .review_name {
   font-weight: bold;
   font-size: 18px;
@@ -224,7 +215,6 @@ p {
   letter-spacing: 0.3px;
   color: #a7a7a7;
 }
-
 /* <!-- 풋터 -->*/
 .ft_inner {
   width: 100%;
@@ -235,7 +225,6 @@ p {
   /* background-color: blanchedalmond; */
   /* font-weight: bold; */
 }
-
 .ft_menu {
   width: 100%;
 
