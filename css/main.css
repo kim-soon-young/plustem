@@ -380,9 +380,236 @@ main{
   font-weight: lighter;
 }
 /* <!-- 배너1 --> */
+.banner {
+  width: 100%;
+  background-color: rgb(235, 145, 11);
+}
+.banner a img {
+  width: 100%;
+  display: block;
+}
+.mb_banner {
+  width: 100%;
+  display: none;
+}
+
+.mb_banner a img {
+  width: 100%;
+  display: block;
+}
+
 /* <!-- 섹션 간식 & 슬림쉐이크 --> */
-/* <!-- 배너2 --> */
+.snack_shake_inner {
+  margin: 0 auto;
+  /* background-color: rgb(235, 193, 200); */
+}
+.list_box {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+}
+.list_box li {
+  width: calc(100% / 4);
+}
+.list_box li a {
+  width: 100%;
+  display: block;
+}
+.list_box li a img {
+  width: 100%;
+}
+.list_box li .list_box li .list_box li del,
+p {
+  /* color: blue;  */
+  letter-spacing: 0.3px;
+}
+
+.list_box_text {
+  padding: 20px 0px 0px 20px;
+  /* background-color: blueviolet; */
+}
+
+.item_name {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.salePercent {
+  color: red;
+  display: inline;
+  float: left;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-right: 10px;
+}
+.nomalPrice {
+  color: #a7a7a7;
+  float: left;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-right: 10px;
+}
+.salePrice {
+  display: inline;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.snack_shake {
+  margin-bottom: 200px;
+}
 /* <!-- 섹션 리뷰 --> */
-/* <!-- 풋터 -->
+.review_inner {
+  margin: 0 auto;
+  position: relative;
+  /* background-color:rgb(217, 238, 175); */
+}
+.review_box {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  gap: 5px;
+}
+
+.review_box_list {
+  width: calc(100% / 4);
+  height: 520px;
+  border: 1px solid #a7a7a7;
+}
+.reiviewImg {
+  width: 100%;
+  height: 300px;
+  /* display: block;
+    width: 320px;
+    height: 300px;
+    position: relative; */
+}
+
+.review_text {
+  height: 200px;
+  /* background-color: rgb(193, 236, 238); */
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  margin-bottom: 200px;
+  padding: 20px 10px 0 10px;
+  text-align: center;
+  position: relative;
+}
+.reviewStar {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.review_name {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+.review_content {
+  color: #a7a7a7;
+  font-size: 16px;
+  position: absolute;
+  bottom: 25%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+.review_moreBt {
+  border: 1px solid #a7a7a7;
+  padding: 10px 20px;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -100px;
+  letter-spacing: 0.3px;
+  color: #a7a7a7;
+}
+
+/* <!-- 풋터 -->*/
+.ft_inner {
+  width: 100%;
+  height: 400px;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  margin: 0 auto;
+  /* background-color: blanchedalmond; */
+  /* font-weight: bold; */
+}
+
+.ft_menu {
+  width: 100%;
+
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: left;
+  gap: 5%;
+  padding-left: 10%;
+  background-color: #fff;
+  border: 1px solid black;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  /*  background-color: cadetblue; */
+}
+.ft_menu li a {
+  /* overflow: hidden; */
+}
+
+.ft_contents {
+  /* letter-spacing: 0.3px;  */
+  line-height: 1.5;
+  font-size: 14px;
+}
+.ft_contents_left {
+  width: 45%;
+  /* height: 340px; */
+  /* background-color: rgb(231, 231, 238); */
+  /* font-size: 14px; */
+  /* display: block; */
+  float: left;
+  padding-top: 30px;
+  padding-left: 5%;
+  /* display: none; */
+  white-space: nowrap;
+}
+.ft_contents_right {
+  width: 45%;
+  padding-left: 5%;
+
+  display: block;
+  float: left;
+  /* background-color: coral; */
+  padding-top: 30px;
+  position: relative;
+  /* margin-left: 15%; */
+  white-space: nowrap;
+}
+.ft_contents_right img {
+  display: block;
+}
+.cellNum {
+  font-size: 32px;
+  font-weight: 900;
+}
+.ft_qna_bt {
+  border: 1px solid black;
+  padding: 4px 8px;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  top: 180px;
+}
 
 
