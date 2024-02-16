@@ -112,6 +112,7 @@ header > .inner {
 }
 /* 네비 호버 */
 .main-menu > li:hover > a {
+
   /* color: #0080ed; */
   /* color: #f68245; */
   /* color: #a4bdeb; */
@@ -125,6 +126,7 @@ header > .inner {
 /* 햄버거 눌렀을 때 호버 */
 .nav-mb-gnb li:hover a {
   color: #56d5fe;
+
 }
 .navbt {
   display: none;
