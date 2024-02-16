@@ -112,16 +112,22 @@ header > .inner {
 }
 /* 네비 호버 */
 .main-menu > li:hover > a {
-<<<<<<< HEAD
-  color: #080ED;
+
+
+  /* color: #0080ed; */
+  /* color: #f68245; */
+  /* color: #a4bdeb; */
+  background: linear-gradient(to top, #56d5fe 40%, transparent 40%);
+  transition: all 3s;
+
 }
 .main-menu > li > .sub-menu > li:hover > a {
-  color: #fed74b;
+  /* color: #fed74b; */
+  color: #56d5fe;
 }
 /* 햄버거 눌렀을 때 호버 */
 .nav-mb-gnb li:hover a {
-  color: #fed74b;
-=======
+
   /* color: #0080ed; */
   /* color: #f68245; */
   /* color: #a4bdeb; */
@@ -135,7 +141,8 @@ header > .inner {
 /* 햄버거 눌렀을 때 호버 */
 .nav-mb-gnb li:hover a {
   color: #56d5fe;
->>>>>>> 59fe11f16deb1c8276183c14a95dcff0f155a008
+
+
 }
 .navbt {
   display: none;
