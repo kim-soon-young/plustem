@@ -1,3 +1,31 @@
+window.addEventListener("load", function () {
+  //   top 버튼 스크롤 기능
+  const topBtn = document.getElementById("top-btn");
+  topBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (window.scrollY == 0) {
+      window.scrollTo({
+        top: 2952,
+        behavior: "smooth",
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  });
+  // 화살표 이미지 회전
+  const topBtnImg = document.getElementById("top-btn-img");
+  window.addEventListener("scroll", function (scTop) {
+    scTop = window.document.documentElement.scrollTop;
+    if (scTop > 0) {
+      topBtnImg.classList.add("up");
+    } else {
+      topBtnImg.classList.remove("up");
+    }
+  });
+});
 // 스크롤 내리면 헤더 고정
 document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector("header");
@@ -37,20 +65,6 @@ window.onload = function () {
   const header = document.querySelector(".header");
   const mbt = document.querySelector(".mbt");
   let scy = 0;
-  // 2.class 적용 여부 결정
-  // 웹버전일때
-  window.addEventListener("scroll", function () {
-    // 새로 고침 / url 입력해서 html 출력시
-    // 1.스크롤바의 픽셀 위치값을 파악해서
-    scy = this.document.documentElement.scrollTop;
-    if (scy > 0) {
-      header.classList.add("active");
-      mbt.classList.add("active");
-    } else {
-      header.classList.remove("active");
-      mbt.classList.remove("active");
-    }
-  });
   // 반응형 (1024px) 햄버거바가 생겼을때
   // 햄버거버튼을 클릭했을때
   const navMb = document.querySelector(".nav-mb");
@@ -64,14 +78,6 @@ window.onload = function () {
       navMb.classList.remove("active");
       // 스크롤이 안생기게 하는 코드
       htmlRoot.classList.remove("active");
-      // // 스크롤이 되었다면
-      // if (scy > 0) {
-      //   header.classList.add("active");
-      //   mbt.classList.add("active");
-      // }else{
-      //   header.classList.remove("active");
-      //   mbt.classList.remove("active");
-      // }
     } else {
       // 햄버거 버튼을  눌렀을때 x가 바뀌는 코드
       this.classList.add("ani");

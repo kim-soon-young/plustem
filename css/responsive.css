@@ -61,6 +61,16 @@
   }
 }
 @media screen and (max-width: 768px) {
+  /* 카카오톡 */
+  .kakao {
+    right: 22px;
+    bottom: 40px;
+  }
+  /* <!-- 탑버튼 --> */
+  .top-button {
+    bottom: 100px;
+    right: 22px;
+  }
   /* 헤더 */
   .header__top {
     display: none;
