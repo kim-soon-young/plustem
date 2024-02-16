@@ -101,6 +101,12 @@
   }
 }
 @media screen and (max-width: 650px) {
+  /* 공통 */
+  h3,
+  h4 {
+    padding: 150px 0 100px;
+  }
+
   /* 첫 구매시*/
   .firstbuy__item__info .price {
     display: flex;
@@ -125,6 +131,16 @@
   }
 }
 @media screen and (max-width: 450px) {
+  /* 공통 */
+  h3,
+  h4 {
+    font-size: 28px;
+  }
+  .sale__item__left > .price > p:nth-child(1),
+  p:nth-child(2),
+  p {
+    font-size: 18px;
+  }
   /* 헤더 */
   .logo-tablet {
     padding-left: 20px;
@@ -330,9 +346,6 @@
     line-height: 1.5em;
     bottom: 10px;
   }
-  .snack_shake {
-    margin-bottom: 100px;
-  }
 }
 @media screen and (max-width: 700px) {
   /* ==================================푸터 */
@@ -434,6 +447,7 @@
     display: block;
   }
   /* ============================500px리스트 */
+
   .snack_shake_inner {
     margin: 0 auto;
     /* background-color: rgb(235, 193, 200); */
@@ -488,9 +502,6 @@
     font-size: 14px;
     font-weight: bold;
     line-height: 1.5em;
-  }
-  .snack_shake {
-    margin-bottom: 100px;
   }
   /* =============================500px리뷰 */
   

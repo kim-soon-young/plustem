@@ -112,14 +112,21 @@ header > .inner {
 }
 /* 네비 호버 */
 .main-menu > li:hover > a {
-  color: #080ED;
+
+  /* color: #0080ed; */
+  /* color: #f68245; */
+  /* color: #a4bdeb; */
+  background: linear-gradient(to top, #56d5fe 40%, transparent 40%);
+  transition: all 3s;
 }
 .main-menu > li > .sub-menu > li:hover > a {
-  color: #fed74b;
+  /* color: #fed74b; */
+  color: #56d5fe;
 }
 /* 햄버거 눌렀을 때 호버 */
 .nav-mb-gnb li:hover a {
-  color: #fed74b;
+  color: #56d5fe;
+
 }
 .navbt {
   display: none;
@@ -380,15 +387,27 @@ main {
   margin: 30px 0 0;
   text-align: center;
   font-weight: lighter;
+  display: block;
+}
+.buynow:hover {
+  background-color: #a7a7a7;
+  color: #fff;
 }
 /* <!-- 배너1 --> */
 .banner {
   width: 100%;
   background-color: rgb(235, 145, 11);
+  margin-top: 200px;
+}
+.banner a {
+  width: 100%;
+  height: 100%;
 }
 .banner a img {
   width: 100%;
   display: block;
+  min-height: 200px;
+  object-fit: cover;
 }
 .mb_banner {
   width: 100%;
@@ -406,7 +425,7 @@ main {
   /* background-color: rgb(235, 193, 200); */
 }
 .list_box {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -459,9 +478,6 @@ p {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.5em;
-}
-.snack_shake {
-  margin-bottom: 200px;
 }
 /* <!-- 섹션 리뷰 --> */
 .review_inner {
@@ -545,7 +561,7 @@ p {
   font-size: 16px;
   letter-spacing: 0.3px;
   margin: 0 auto;
-  /* background-color: blanchedalmond; */
+  background-color: #fcfcfc;
   /* font-weight: bold; */
 }
 
@@ -558,7 +574,7 @@ p {
   justify-content: left;
   gap: 5%;
   padding-left: 10%;
-  background-color: #fff;
+  background-color: #fcfcfc;
   border: 1px solid black;
   white-space: nowrap;
   overflow-wrap: break-word;
@@ -610,6 +626,8 @@ p {
   background-color: #fff;
   font-size: 14px;
   text-align: center;
-  position: absolute;
-  top: 180px;
+  font-size: 14px;
+  margin: 20px 0;
+  display: block;
+  width: 100px;
 }
