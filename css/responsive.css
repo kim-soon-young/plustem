@@ -83,7 +83,7 @@
   .ft_contents_left {
     display: none;
   }
-  .add_img{
+  .add_img {
     display: block;
   }
   .ft_contents_right {
@@ -99,15 +99,17 @@
   .ft_qna_bt {
     font-size: 14px;
   }
-  .more_box{
+  .more_box {
     display: block;
   }
   .more_info {
-    display: none; }
+    display: none;
+  }
 
-.more_bt:hover + .more_info {
+  .more_bt:hover + .more_info {
     display: block;
-}}
+  }
+}
 @media screen and (max-width: 980px) {
   /* 메인 */
   .sw-main .main_img_mb {
@@ -171,7 +173,7 @@
   }
   .review_box_list {
     width: calc(50% - 10px);
-    height:auto;
+    height: auto;
     margin-bottom: 15px;
   }
   .review_text {
@@ -429,12 +431,26 @@
     line-height: 1.5em;
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  .promotion-img {
+    height: 300px;
+  }
+  .promotion-img a:nth-child(1) {
+    height: auto;
+  }
+  .promotion-img a:nth-child(2) {
+    display: none;
+  }
+}
 @media screen and (max-width: 450px) {
   /* 공통 */
   h3,
   h4 {
     font-size: 25px;
-    padding: 130px 0 80px;
+    padding: 130px 10px 80px;
+    word-break: keep-all;
   }
   .sale__item__left > .price > p:nth-child(1),
   p:nth-child(2),
@@ -461,6 +477,13 @@
   /* 첫구매 */
   firstbuy > .inner {
     padding: 0 5px;
+  }
+  .firstbuy p {
+    font-size: 15px;
+    width: 250px;
+    margin: -60px auto 0;
+    line-height: 1.2;
+    word-break: keep-all;
   }
   .firstbuy__item {
     flex-direction: column;
@@ -501,12 +524,21 @@
     gap: 2%;
     padding-left: 10px;
   }
-.ft_contents_right {
-font-size: 14px;
-}
+  .ft_contents_right {
+    font-size: 14px;
+  }
 }
 @media all and (max-width: 380px) {
   /* 세일 */
+  .sale__item__left > .text a {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 5px 0 10px;
+  }
+  .sale__item__left > .text p, .price p{
+    font-size: 15px;
+  }
+}
   .sale__item__left > .price > p:nth-child(1) {
     font-size: 16px;
   }
@@ -516,17 +548,17 @@ font-size: 14px;
   .sale__item__left > .price > p:nth-child(3) {
     font-size: 20px;
   }
+
 }
 @media screen and (max-width: 350px) {
   /* 공통 */
-  h4 {
+  h4,
+  h3 {
     width: 250px;
     margin: 0 auto;
     line-height: 1.2;
     word-break: keep-all;
   }
- 
-  
 }
 @media screen and (max-width: 320px) {
   body {
@@ -564,21 +596,22 @@ font-size: 14px;
     font-size: 20px;
     font-weight: 900;
   }
-  .add_img{
+  .add_img {
     width: 150px;
   }
   .ft_qna_bt {
-  margin-top: -10px;
-  font-size: 10px;
-  border: 1px solid black;
-  padding: 2px 3px;
-  background-color: #fff;
-  font-size: 11px;
-  margin: 10px 0 20px 0;
-  display: block;
-  width: 100px;
-  letter-spacing: 2px;
+    margin-top: -10px;
+    font-size: 10px;
+    border: 1px solid black;
+    padding: 2px 3px;
+    background-color: #fff;
+    font-size: 11px;
+    margin: 10px 0 20px 0;
+    display: block;
+    width: 100px;
+    letter-spacing: 2px;
+  }
+  .review_content {
+    font-size: 13px;
+  }
 }
-.review_content {
-font-size: 13px;
-}}

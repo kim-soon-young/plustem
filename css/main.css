@@ -266,6 +266,20 @@ header > .inner {
   color: #000;
   border-bottom: 1px solid #d9d9d9;
 }
+.promotion-img {
+  padding: 40px;
+  display: flex;
+  gap: 10px;
+}
+.promotion-img a {
+  width: 100%;
+  height: 100%;
+}
+.promotion-img a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* <!-- 메인 --> */
 main {
   padding-top: 260px;
@@ -533,7 +547,7 @@ p {
   height: auto;
 }
 .review_text {
-height: 200px;
+  height: 200px;
   /* background-color: rgb(193, 236, 238); */
   letter-spacing: 0.3px;
   line-height: 1.5;
@@ -609,7 +623,7 @@ height: 200px;
   border: 1px solid black;
   white-space: nowrap;
   overflow-wrap: break-word;
-   /* background-color: #0a3585e0; */
+  /* background-color: #0a3585e0; */
   overflow: hidden;
 }
 .ft_contents {
@@ -626,7 +640,7 @@ height: 200px;
   padding-top: 30px;
   padding-bottom: 15px;
 }
-.add_img{
+.add_img {
   display: none;
 }
 .icon-arrow {
@@ -668,8 +682,8 @@ height: 200px;
   border: 1px solid #fff;
 }
 .more_box {
-  display: none; 
+  display: none;
 }
-.more_info{
+.more_info {
   font-size: 13px;
 }
