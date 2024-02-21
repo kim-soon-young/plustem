@@ -250,6 +250,9 @@ header > .inner {
   background-color: #fff;
   opacity: 1;
   transition: all 0.3s;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  background-color: #953e3e;
 }
 .nav-mb.active {
   left: 0%;
