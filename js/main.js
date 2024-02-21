@@ -97,4 +97,13 @@ $(document).ready(function () {
   $(".main-menu").mouseleave(function () {
     $(".sub-menu li , .navbt").stop().slideUp();
   });
+
+  $(".menu > a").click(function () {
+    let submenu = $(this).next("ul");
+    if (submenu.is(":visible")) {
+      submenu.slideUp();
+    } else {
+      submenu.slideDown();
+    }
+  });
 });
