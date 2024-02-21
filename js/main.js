@@ -77,14 +77,14 @@ window.onload = function () {
       // 모바일에 메뉴가 나타나는 코드
       navMb.classList.remove("active");
       // 스크롤이 안생기게 하는 코드
-      htmlRoot.classList.remove("active");
+      // htmlRoot.classList.remove("active");
     } else {
       // 햄버거 버튼을  눌렀을때 x가 바뀌는 코드
       this.classList.add("ani");
       // 모바일에 메뉴가 나타나는 코드
       navMb.classList.add("active");
       // 스크롤이 안생기게 하는 코드
-      htmlRoot.classList.add("active");
+      // htmlRoot.classList.add("active");
     }
   });
 };
