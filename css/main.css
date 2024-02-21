@@ -161,7 +161,7 @@ header > .inner {
   color: #56d5fe;
 }
 /* 햄버거 눌렀을 때 호버 */
-.nav-mb-gnb li:hover a {
+.nav-mb-gnb li:hover > a {
   color: #56d5fe;
 }
 .navbt {
@@ -257,7 +257,7 @@ header > .inner {
   opacity: 1;
 }
 .nav-mb-gnb li {
-  line-height: 70px;
+  line-height: 60px;
 }
 .nav-mb-gnb li a {
   display: block;
@@ -267,6 +267,22 @@ header > .inner {
   color: #000;
   border-bottom: 1px solid #d9d9d9;
 }
+.menu .hide {
+  display: none;
+}
+
+.menu .hide li a {
+  cursor: pointer;
+  display: block;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.menu > .hide > li:hover a {
+  font-weight: bold;
+}
+
 .promotion-img {
   padding: 40px;
   display: flex;
