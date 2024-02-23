@@ -3,6 +3,10 @@
   .inner {
     padding: 0 20px;
   }
+  /* 세일 */
+  .firstbuy__item li a img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1200px) {
   /* 헤더 */
@@ -431,8 +435,6 @@
     line-height: 1.5em;
   }
 }
-
-
 @media screen and (max-width: 500px) {
   .promotion-img {
     height: 300px;
